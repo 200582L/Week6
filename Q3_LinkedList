@@ -62,7 +62,7 @@ int main() {
     
     auto start_display = high_resolution_clock::now();
     
-    stack.push(8);
+    stack.push(8); //push
     stack.push(10);
     stack.push(5);
     stack.push(11);
@@ -73,9 +73,9 @@ int main() {
     stack.push(20);
     stack.push(17);
     
-    stack.display();
+    stack.display(); //display
     
-    stack.pop();
+    stack.pop(); //pop
     stack.pop();
     stack.pop();
     stack.pop();
@@ -92,7 +92,7 @@ int main() {
     
     auto stop_display = high_resolution_clock::now();
     auto duration_display = duration_cast<microseconds>(stop_display - start_display);
-    cout << "Execution time for LinkedList:" << duration_display.count() << " microseconds" << endl;
+    cout << "Time taken: " << duration_display.count() << " microseconds" << endl;
 
     
     return 0;
