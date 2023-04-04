@@ -92,7 +92,7 @@ int main() {
     
     auto stop_display = high_resolution_clock::now();
     auto duration_display = duration_cast<microseconds>(stop_display - start_display);
-    cout << "Time taken: " << duration_display.count() << " microseconds" << endl;
+    cout << "Execution time for LinkedList: " << duration_display.count() << " microseconds" << endl;
 
     
     return 0;
